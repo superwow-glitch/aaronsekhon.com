@@ -7,13 +7,14 @@
 html { background: #4A0E12; }
 body {
   margin: 0;
-  font: clamp(20px, .6rem + 1.45vw, 40px)/1.4 Baskervville, Georgia, serif;
+  font: clamp(20px, .5rem + 1.2vw, 34px)/1.4 Baskervville, Georgia, serif;
 }
 p { margin: 0; }
 
 .day, .evening { position: relative; box-sizing: border-box; padding-left: 8.5vw; padding-right: 8.5vw; }
 .day {
   min-height: 60vh;
+  padding-top: 8vh;
   padding-bottom: 9vh;
   background: #F4EFE6;
   color: #4A0E12;
@@ -21,7 +22,7 @@ p { margin: 0; }
   flex-direction: column;
   justify-content: flex-end;
 }
-.day p + p { margin-top: 1.3em; }
+.day p + p { margin-top: 1.1em; }
 .evening {
   min-height: 40vh;
   padding-top: 9vh;
