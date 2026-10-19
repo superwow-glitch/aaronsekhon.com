@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OB</title>
+<meta name="description" content="OB. A private circle, London.">
+<meta property="og:title" content="OB">
+<meta property="og:description" content="A private circle · London">
+<meta name="theme-color" content="#F4EFE6">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+<style>
+  :root { --cream:#F4EFE6; --ox:#4A0E12; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html,body { height:100%; }
+  body {
+    background:var(--cream); color:var(--ox);
+    font-family:"Cormorant Garamond", Garamond, "Times New Roman", serif; font-weight:500;
+    display:flex; align-items:center; justify-content:center; text-align:center;
+    -webkit-font-smoothing:antialiased; padding:0 16px;
+  }
+  main { display:flex; flex-direction:column; align-items:center; }
+  .sun { width:72px; height:72px; opacity:0; animation:rise 1.6s ease-out .2s forwards, turn 120s linear 1.8s infinite; }
+  .name { font-weight:500; margin-top:44px; font-size:clamp(30px,6vw,44px); letter-spacing:.02em; }
+  .title { margin-top:14px; font-size:13px; letter-spacing:.42em; padding-left:.42em; }
+  .rule { width:48px; height:1px; background:var(--ox); margin:34px 0; opacity:.7; }
+  .circle { font-size:12px; letter-spacing:.42em; padding-left:.42em; }
+  a { margin-top:22px; color:var(--ox); text-decoration:none; font-style:italic; font-size:19px; letter-spacing:.03em;
+       border-bottom:1px solid transparent; transition:border-color .4s; }
+  a:hover { border-color:var(--ox); }
+  .fade { opacity:0; animation:fade 1.4s ease-out forwards; }
+  .d1 { animation-delay:.9s; } .d2 { animation-delay:1.2s; } .d3 { animation-delay:1.5s; } .d4 { animation-delay:1.8s; }
+  @keyframes rise { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:none; } }
+  @keyframes fade { to { opacity:1; } }
+  @keyframes turn { to { transform:rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce) { .sun,.fade { animation:none; opacity:1; } }
+</style>
+</head>
+<body>
+<main>
+  <svg class="sun" viewBox="190 190 620 620" aria-hidden="true"><g fill="#4A0E12"><circle cx="500" cy="500" r="110"/><polygon points="485,360 515,360 500,190" transform="rotate(0 500 500)"/><polygon points="485,360 515,360 500,190" transform="rotate(30 500 500)"/><polygon points="485,360 515,360 500,190" transform="rotate(60 500 500)"/><polygon points="485,360 515,360 500,190" transform="rotate(90 500 500)"/><polygon points="485,360 515,360 500,190" transform="rotate(120 500 500)"/><polygon points="485,360 515,360 500,190" transform="rotate(150 500 500)"/><polygon points="485,360 515,360 500,190" transform="rotate(180 500 500)"/><polygon points="485,360 515,360 500,190" transform="rotate(210 500 500)"/><polygon points="485,360 515,360 500,190" transform="rotate(240 500 500)"/><polygon points="485,360 515,360 500,190" transform="rotate(270 500 500)"/><polygon points="485,360 515,360 500,190" transform="rotate(300 500 500)"/><polygon points="485,360 515,360 500,190" transform="rotate(330 500 500)"/></g></svg>
+  <h1 class="name fade d1">Aaron Sekhon</h1>
+  <p class="title fade d2">FOUNDER, OB</p>
+  <div class="rule fade d3"></div>
+  <p class="circle fade d3">A PRIVATE CIRCLE · LONDON</p>
+  <a class="fade d4" href="mailto:aaron@aaronsekhon.com">aaron@aaronsekhon.com</a>
+</main>
+</body>
+</html>
