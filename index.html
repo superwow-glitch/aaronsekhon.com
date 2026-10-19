@@ -3,30 +3,56 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Aaron Sekhon</title>
-<meta name="description" content="Aaron Sekhon, OB, London.">
-<meta property="og:title" content="Aaron Sekhon">
-<meta property="og:description" content="OB, London">
-<meta name="theme-color" content="#ffffff">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<style>
-html { background:#ffffff; }
-body { margin:0; background:#ffffff; color:#000000; font-family:Georgia, "Times New Roman", serif; font-size:18px; line-height:1.55; }
-main { max-width:29em; padding:14vh 24px 80px clamp(24px, 11vw, 180px); }
-h1 { font-size:1.35em; font-weight:normal; margin:0; }
-p { margin:0 0 1em; }
-.sub { color:#555555; margin-bottom:2em; }
-a { color:#000000; text-underline-offset:3px; }
-@media (max-width:560px) { body { font-size:17px; } main { padding-top:10vh; } }
-</style>
+<title>OB</title>
+<meta name="description" content="OB, London.">
+<meta name="theme-color" content="#F4EFE6">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://aaronsekhon.com/">
+<meta property="og:title" content="OB">
+<meta property="og:description" content="London">
+<meta property="og:image" content="https://aaronsekhon.com/share.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="ob.css?v=12">
 </head>
 <body>
-<main>
-<h1>Aaron Sekhon</h1>
-<p class="sub">OB, London</p>
-<p>I introduce people who should know each other. Usually over a coffee or a walk, and a few times a year at a dinner I host for eight or&nbsp;ten.</p>
-<p>If I gave you my card, email me and say where we&nbsp;met.</p>
-<p><a href="mailto:aaron@aaronsekhon.com">aaron@aaronsekhon.com</a></p>
-</main>
+<div class="day">
+  <p>OB starts over coffee.<br>
+  Sometimes a walk instead,<br>
+  or a private view<br>
+  if there&rsquo;s a good one on.</p>
+  <p>Write and tell me where we met,<br>
+  or who gave you the card.<br>
+  <a href="mailto:aaron@aaronsekhon.com">aaron@aaronsekhon.com</a></p>
+</div>
+<div class="evening">
+  <svg class="sun" viewBox="190 190 620 620" aria-hidden="true">
+    <defs>
+      <g id="sun">
+        <circle cx="500" cy="500" r="110"/>
+        <polygon id="ray" points="485,360 515,360 500,190"/>
+        <use href="#ray" transform="rotate(30 500 500)"/>
+        <use href="#ray" transform="rotate(60 500 500)"/>
+        <use href="#ray" transform="rotate(90 500 500)"/>
+        <use href="#ray" transform="rotate(120 500 500)"/>
+        <use href="#ray" transform="rotate(150 500 500)"/>
+        <use href="#ray" transform="rotate(180 500 500)"/>
+        <use href="#ray" transform="rotate(210 500 500)"/>
+        <use href="#ray" transform="rotate(240 500 500)"/>
+        <use href="#ray" transform="rotate(270 500 500)"/>
+        <use href="#ray" transform="rotate(300 500 500)"/>
+        <use href="#ray" transform="rotate(330 500 500)"/>
+      </g>
+      <clipPath id="above"><rect width="1000" height="500"/></clipPath>
+      <clipPath id="below"><rect y="500" width="1000" height="500"/></clipPath>
+    </defs>
+    <use href="#sun" clip-path="url(#above)" fill="#4A0E12"/>
+    <use href="#sun" clip-path="url(#below)" fill="#F4EFE6"/>
+  </svg>
+  <p>A few times a season,<br>
+  eight or ten of us<br>
+  sit down to dinner.</p>
+</div>
 </body>
 </html>

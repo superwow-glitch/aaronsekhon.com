@@ -1,0 +1,57 @@
+@font-face {
+  font-family: Baskervville;
+  src: url(baskervville-400.woff2) format("woff2");
+  font-display: swap;
+}
+
+html { background: #4A0E12; }
+body {
+  margin: 0;
+  font: clamp(20px, .6rem + 1.45vw, 40px)/1.4 Baskervville, Georgia, serif;
+}
+p { margin: 0; }
+
+.day, .evening { position: relative; box-sizing: border-box; padding-left: 8.5vw; padding-right: 8.5vw; }
+.day {
+  min-height: 60vh;
+  padding-bottom: 9vh;
+  background: #F4EFE6;
+  color: #4A0E12;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.day p + p { margin-top: 1.3em; }
+.evening {
+  min-height: 40vh;
+  padding-top: 9vh;
+  background: #4A0E12;
+  color: #F4EFE6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.sun {
+  position: absolute;
+  top: 0;
+  right: 8.5vw;
+  width: clamp(96px, 26vh, 250px);
+  transform: translateY(-50%);
+}
+
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .2em; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; text-decoration: none; }
+
+.day ::selection { background: #4A0E12; color: #F4EFE6; }
+.evening ::selection { background: #F4EFE6; color: #4A0E12; }
+
+@media (max-width: 700px) {
+  body { font-size: 20px; }
+  .day, .evening { padding-left: 6vw; padding-right: 6vw; }
+  .day { min-height: 0; padding-top: 30vw; padding-bottom: 22vw; }
+  .evening { min-height: 0; padding-top: 22vw; padding-bottom: 30vw; }
+  .sun { right: 6vw; width: 30vw; }
+}
+@media (max-width: 340px) {
+  body { font-size: 18px; }
+}
