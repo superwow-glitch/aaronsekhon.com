@@ -3,81 +3,31 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>OB · A private circle, London</title>
-<meta name="description" content="OB is a private circle in London, kept in two places. Entry is by introduction.">
+<title>OB</title>
+<meta name="description" content="OB, London.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://aaronsekhon.com/">
 <meta property="og:title" content="OB">
-<meta property="og:description" content="A private circle · London">
+<meta property="og:description" content="London">
 <meta property="og:image" content="https://aaronsekhon.com/og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#F4EFE6">
+<meta name="theme-color" content="#4A0E12">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
-<style>
-  :root { --cream:#F4EFE6; --ox:#4A0E12; }
-  * { margin:0; padding:0; box-sizing:border-box; }
-  html { background:var(--cream); }
-  body {
-    min-height:100vh; background:var(--cream); color:var(--ox);
-    font-family:"Cormorant Garamond", Garamond, "Times New Roman", serif; font-weight:500;
-    display:flex; flex-direction:column; align-items:center; text-align:center;
-    -webkit-font-smoothing:antialiased; padding:0 16px;
-  }
-  main { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:72px 0 40px; max-width:720px; width:100%; }
-  .caps { text-transform:uppercase; letter-spacing:.42em; padding-left:.42em; font-weight:600; font-size:12px; }
-  .sun { width:64px; height:64px; opacity:0; animation:rise 1.6s ease-out .2s forwards, turn 120s linear 1.8s infinite; }
-  .name { font-weight:500; margin-top:38px; font-size:clamp(30px,6vw,42px); letter-spacing:.02em; }
-  .title { margin-top:12px; }
-  .rule { width:48px; height:1px; background:var(--ox); margin:36px auto; opacity:.7; }
-  .lede { font-size:clamp(20px,3.2vw,24px); line-height:1.45; max-width:30ch; }
-  .rooms { display:grid; grid-template-columns:1fr 1fr; gap:56px; margin-top:44px; width:100%; max-width:600px; }
-  .room p { margin-top:12px; font-size:19px; line-height:1.5; font-style:italic; }
-  .room + .room { position:relative; }
-  .room + .room::before { content:""; position:absolute; left:-28px; top:2px; bottom:2px; width:1px; background:var(--ox); opacity:.25; }
-  .entry { margin-top:48px; font-size:19px; }
-  .cta { display:inline-block; margin-top:22px; color:var(--ox); text-decoration:none; border:1px solid var(--ox);
-          padding:14px 26px 13px 30px; transition:background .4s, color .4s; }
-  .cta:hover, .cta:focus-visible { background:var(--ox); color:var(--cream); }
-  footer { padding:28px 0 32px; font-size:11px; opacity:.75; }
-  .fade { opacity:0; animation:fade 1.4s ease-out forwards; }
-  .d1 { animation-delay:.8s; } .d2 { animation-delay:1.05s; } .d3 { animation-delay:1.3s; }
-  .d4 { animation-delay:1.6s; } .d5 { animation-delay:1.9s; } .d6 { animation-delay:2.2s; }
-  @keyframes rise { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:none; } }
-  @keyframes fade { to { opacity:1; } }
-  @keyframes turn { to { transform:rotate(360deg); } }
-  @media (max-width:560px) {
-    main { padding-top:56px; }
-    .rooms { grid-template-columns:1fr; gap:36px; margin-top:36px; }
-    .room + .room::before { left:50%; top:-18px; bottom:auto; width:24px; height:1px; transform:translateX(-50%); }
-  }
-  @media (prefers-reduced-motion: reduce) { .sun,.fade { animation:none; opacity:1; } }
-</style>
+<link rel="preload" href="caslon-display.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-  <svg class="sun" viewBox="190 190 620 620" aria-hidden="true"><g fill="#4A0E12"><circle cx="500" cy="500" r="110"/><polygon points="485,360 515,360 500,190" transform="rotate(0 500 500)"/><polygon points="485,360 515,360 500,190" transform="rotate(30 500 500)"/><polygon points="485,360 515,360 500,190" transform="rotate(60 500 500)"/><polygon points="485,360 515,360 500,190" transform="rotate(90 500 500)"/><polygon points="485,360 515,360 500,190" transform="rotate(120 500 500)"/><polygon points="485,360 515,360 500,190" transform="rotate(150 500 500)"/><polygon points="485,360 515,360 500,190" transform="rotate(180 500 500)"/><polygon points="485,360 515,360 500,190" transform="rotate(210 500 500)"/><polygon points="485,360 515,360 500,190" transform="rotate(240 500 500)"/><polygon points="485,360 515,360 500,190" transform="rotate(270 500 500)"/><polygon points="485,360 515,360 500,190" transform="rotate(300 500 500)"/><polygon points="485,360 515,360 500,190" transform="rotate(330 500 500)"/></g></svg>
-  <h1 class="name fade d1">Aaron Sekhon</h1>
-  <p class="caps title fade d1">Founder, OB</p>
-  <div class="rule fade d2"></div>
-  <p class="lede fade d2">OB is a private circle in London, kept in two places.</p>
-  <div class="rooms">
-    <section class="room fade d3">
-      <h2 class="caps">At the table</h2>
-      <p>Considered evenings, seated with intent.</p>
-    </section>
-    <section class="room fade d4">
-      <h2 class="caps">In the city</h2>
-      <p>Coffees, openings, walks. The introductions that happen in between.</p>
-    </section>
-  </div>
-  <p class="entry fade d5">Entry is by introduction.</p>
-  <a class="cta caps fade d6" href="mailto:aaron@aaronsekhon.com?subject=Introduction">Request an introduction</a>
+<nav class="top">
+  <a href="guests.html">Guest information</a>
+  <a href="mailto:aaron@aaronsekhon.com">Contact</a>
+</nav>
+<main class="crest">
+  <svg class="sun" viewBox="190 190 620 620" aria-hidden="true"><g fill="currentColor"><circle cx="500" cy="500" r="110"/><polygon points="485,360 515,360 500,190" transform="rotate(0 500 500)"/><polygon points="485,360 515,360 500,190" transform="rotate(30 500 500)"/><polygon points="485,360 515,360 500,190" transform="rotate(60 500 500)"/><polygon points="485,360 515,360 500,190" transform="rotate(90 500 500)"/><polygon points="485,360 515,360 500,190" transform="rotate(120 500 500)"/><polygon points="485,360 515,360 500,190" transform="rotate(150 500 500)"/><polygon points="485,360 515,360 500,190" transform="rotate(180 500 500)"/><polygon points="485,360 515,360 500,190" transform="rotate(210 500 500)"/><polygon points="485,360 515,360 500,190" transform="rotate(240 500 500)"/><polygon points="485,360 515,360 500,190" transform="rotate(270 500 500)"/><polygon points="485,360 515,360 500,190" transform="rotate(300 500 500)"/><polygon points="485,360 515,360 500,190" transform="rotate(330 500 500)"/></g></svg>
+  <h1>OB</h1>
+  <p>London</p>
 </main>
-<footer class="caps fade d6">OB · London · MMXXVI</footer>
+<footer>&copy; 2026 Aaron Sekhon</footer>
 </body>
 </html>
