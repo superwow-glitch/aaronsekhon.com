@@ -58,6 +58,11 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; text-dec
 .day ::selection { background: #4A0E12; color: #F4EFE6; }
 .evening ::selection { background: #F4EFE6; color: #4A0E12; }
 
+@media (min-width: 1400px) {
+  .day, .evening { padding-left: 16.6667vw; padding-right: 16.6667vw; }
+  .sun { right: 16.6667vw; }
+}
+
 @media (max-width: 700px) {
   body { font-size: 20px; }
   .day, .evening { padding-left: 6vw; padding-right: 6vw; }
