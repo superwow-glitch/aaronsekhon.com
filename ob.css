@@ -1,13 +1,14 @@
 @font-face {
-  font-family: Baskervville;
-  src: url(baskervville-400.woff2) format("woff2");
+  font-family: "Cormorant Garamond";
+  src: url(cormorant-garamond-500.woff2) format("woff2");
+  font-weight: 500;
   font-display: swap;
 }
 
 html { background: #4A0E12; }
 body {
   margin: 0;
-  font: clamp(18px, .44rem + 1.06vw, 30px)/1.4 Baskervville, Georgia, serif;
+  font: 500 clamp(19.5px, .48rem + 1.15vw, 32.5px)/1.38 "Cormorant Garamond", Georgia, serif;
 }
 p { margin: 0; }
 
@@ -43,7 +44,7 @@ p { margin: 0; }
   position: absolute;
   right: 3.5vw;
   bottom: 4vh;
-  width: clamp(56px, 4.4vw, 80px);
+  width: clamp(42px, 3.3vw, 60px);
   fill: none;
   stroke: #F4EFE6;
   stroke-width: 1.5;
@@ -64,13 +65,13 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; text-dec
 }
 
 @media (max-width: 700px) {
-  body { font-size: 18px; }
+  body { font-size: 19.5px; }
   .day, .evening { padding-left: 6vw; padding-right: 6vw; }
   .day { min-height: 0; padding-top: 30vw; padding-bottom: 22vw; }
   .evening { min-height: 0; padding-top: 22vw; padding-bottom: 30vw; }
   .sun { right: 6vw; width: 30vw; }
-  .bird { right: 5vw; bottom: 5vw; width: 50px; }
+  .bird { right: 5vw; bottom: 5vw; width: 38px; }
 }
 @media (max-width: 340px) {
-  body { font-size: 16.5px; }
+  body { font-size: 18px; }
 }
