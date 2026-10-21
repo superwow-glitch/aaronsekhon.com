@@ -7,7 +7,7 @@
 html { background: #4A0E12; }
 body {
   margin: 0;
-  font: clamp(20px, .5rem + 1.2vw, 34px)/1.4 Baskervville, Georgia, serif;
+  font: clamp(18px, .44rem + 1.06vw, 30px)/1.4 Baskervville, Georgia, serif;
 }
 p { margin: 0; }
 
@@ -64,7 +64,7 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; text-dec
 }
 
 @media (max-width: 700px) {
-  body { font-size: 20px; }
+  body { font-size: 18px; }
   .day, .evening { padding-left: 6vw; padding-right: 6vw; }
   .day { min-height: 0; padding-top: 30vw; padding-bottom: 22vw; }
   .evening { min-height: 0; padding-top: 22vw; padding-bottom: 30vw; }
@@ -72,5 +72,5 @@ a:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; text-dec
   .bird { right: 5vw; bottom: 5vw; width: 50px; }
 }
 @media (max-width: 340px) {
-  body { font-size: 18px; }
+  body { font-size: 16.5px; }
 }
